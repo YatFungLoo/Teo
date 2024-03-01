@@ -1,13 +1,14 @@
 ### Makefile for Teo ###
-
-EXE=Teo
+EXE=teo
 INC=\
+	include/Token.h
 
 SRC=\
-	src/parser.cpp\
+	src/Parser.cpp\
+	src/main.cpp\
 
 CXX=clang++
-CXXFLAGS=-g -O3
+CXXFLAGS=-g -Iinclude/ -O3
 LFLAGS=
 LDFLAGS=
 LLVMFLAGS=llvm-config --cxxflags
