@@ -5,6 +5,7 @@ INC=\
 
 SRC=\
 	src/Parser.cpp\
+	src/Lexer.cpp\
 	src/main.cpp\
 
 CXX=clang++

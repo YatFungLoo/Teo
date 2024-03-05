@@ -1,7 +1,11 @@
+/* This is the Parser header file */
 #include <iostream>
-#include "Token.h"
-
-/// @brief wip
-static void ParseLoop();
-/// @brief public func
-void ParseTopLevel();
+#include "Lexer.h"
+class Parser
+{
+public:
+    /// @brief wip
+    void ParseLoop();
+    /// @brief public func
+    void ParseTopLevel();
+};

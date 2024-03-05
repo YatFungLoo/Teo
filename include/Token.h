@@ -1,3 +1,6 @@
+#ifndef TOKEN_H_
+#define TOKEN_H_
+
 #include <string>
 
 // If token returns values range [0, 255], it should be an ASCII value.
@@ -11,3 +14,5 @@ enum Token {
 
 static std::string IdString;    // To store id string.
 static double NumVal;           // To store number value.
+
+#endif

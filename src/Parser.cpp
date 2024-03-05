@@ -1,9 +1,12 @@
+/* This is the Parser cpp file */
 #include "Parser.h"
 
-static void ParseLoop() {
-    std::cout << tok_def << std::endl;
+void Parser::ParseLoop()
+{
+    Lexer lexer;
+    lexer.test();
 }
-
-void ParseTopLevel() {
+void Parser::ParseTopLevel()
+{
     ParseLoop();
 }

@@ -2,6 +2,7 @@
 
 // Main driver program.
 int main() {
-    ParseTopLevel();
+    Parser parser;
+    parser.ParseTopLevel();
     return 0;
 }
