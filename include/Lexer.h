@@ -5,6 +5,6 @@
 class Lexer
 {
     public:
-        /// @brief test func
-        void test();
+        /// @brief Get token from input.
+        int GetToken();
 };
