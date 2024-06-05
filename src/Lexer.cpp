@@ -1,8 +1,8 @@
-/* This is the Lexer cpp file */
+/* This is the Lexer cpp file. */
 #include "Lexer.h"
 
-int Lexer::GetToken()
-{
+int Lexer::GetToken() {
+    // Clear buffer.
     static int LastChar = ' ';
 
     // Each token is complete when space occurs.
@@ -10,8 +10,7 @@ int Lexer::GetToken()
         LastChar = getchar();
 
     // Special and ID token.
-    if (isalpha(LastChar))
-    {
+    if (isalpha(LastChar)) {
         IdString = LastChar;
         while (isalnum(LastChar = getchar()))
             IdString += LastChar;
@@ -24,8 +23,7 @@ int Lexer::GetToken()
     }
 
     // Numeric values.
-    if (isdigit(LastChar) || LastChar == '.')
-    {
+    if (isdigit(LastChar) || LastChar == '.') {
         std::string NumStr;
         do {
             NumStr += LastChar;
@@ -37,8 +35,7 @@ int Lexer::GetToken()
     }
 
     // Comments.
-    if (LastChar == '#')
-    {
+    if (LastChar == '#') {
         do
             LastChar = getchar();
         while (LastChar != EOF && LastChar != '\n' && LastChar != '\r');

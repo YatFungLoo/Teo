@@ -12,7 +12,7 @@ enum Token {
     tok_num = -5,
 };
 
-static std::string IdString;    // To store id string.
-static double NumVal;           // To store number value.
+static std::string IdString; // To store id string.
+static double NumVal;        // To store number value.
 
 #endif
