@@ -52,6 +52,4 @@ int Lexer::GetToken() {
     int ThisChar = LastChar;
     LastChar = getchar();
     return ThisChar;
-
-    return 0;
 }
